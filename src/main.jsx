@@ -10,6 +10,7 @@ import Home from './components/Home/Home';
 import UpdateProfile from './components/UpdateProfile/UpdateProfile';
 import Detailspage from './components/DetailsPage/Detailspage';
 import UserProfile from './components/UserProfile/UserProfile';
+import Login from './components/Login/Login';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,7 +24,9 @@ const router = createBrowserRouter([
    { path:"/DetailsPage",
     element:<Detailspage></Detailspage>,},
    { path:"/UserProfile",
-    element:<UserProfile></UserProfile>,}
+    element:<UserProfile></UserProfile>,},
+   { path:"/Login",
+    element:<Login></Login>,}
   ]
   },
 ]);
