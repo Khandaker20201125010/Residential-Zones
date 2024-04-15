@@ -1,5 +1,3 @@
-
-
 const UserProfile = () => {
     return (
         <div>

@@ -1,0 +1,122 @@
+{
+    "residential_estates": [
+      {
+        "estate_title": "Modern Townhouse in Suburbia",
+        "id": 1,
+        "segment_name": "Residential",
+        "description": "A contemporary townhouse with spacious living areas and modern amenities.",
+        "price": "$400,000",
+        "status": "sale",
+        "area": "2,500 sq ft",
+        "location": "Suburbia, City X",
+        "facilities": ["3 Bedrooms", "2 Bathrooms", "Open Kitchen", "Backyard Garden"],
+        "image": "townhouse_image_url",
+        "button_text": "View Property"
+      },
+      {
+        "estate_title": "Luxury Penthouse with City Views",
+        "id": 2,
+        "segment_name": "Residential",
+        "description": "A luxurious penthouse offering panoramic views of the city skyline.",
+        "price": "$1,200,000",
+        "status": "sale",
+        "area": "3,000 sq ft",
+        "location": "Downtown, City Y",
+        "facilities": ["4 Bedrooms", "3 Bathrooms", "Private Terrace", "Gym", "Swimming Pool"],
+        "image": "penthouse_image_url",
+        "button_text": "View Property"
+      },
+      {
+        "estate_title": "Cozy Apartment in Trendy Neighborhood",
+        "id": 3,
+        "segment_name": "Residential",
+        "description": "A charming apartment nestled in a vibrant and trendy neighborhood.",
+        "price": "$2,000/month",
+        "status": "rent",
+        "area": "900 sq ft",
+        "location": "Hipster District, City Z",
+        "facilities": ["1 Bedroom", "1 Bathroom", "Balcony", "Shared Courtyard"],
+        "image": "apartment_image_url",
+        "button_text": "View Property"
+      },
+      {
+        "estate_title": "Senior Living Community with Resort Amenities",
+        "id": 4,
+        "segment_name": "Residential",
+        "description": "A senior living community offering resort-style amenities and a vibrant social atmosphere.",
+        "price": "$3,500/month",
+        "status": "rent",
+        "area": "1,200 sq ft",
+        "location": "Retirement Paradise, City A",
+        "facilities": ["Independent Living", "Dining Hall", "Library", "Swimming Pool", "Fitness Center"],
+        "image": "senior_community_image_url",
+        "button_text": "View Property"
+      },
+      {
+        "estate_title": "Family Home with Garden",
+        "id": 5,
+        "segment_name": "Residential",
+        "description": "A spacious family home with a beautiful garden, perfect for outdoor gatherings.",
+        "price": "$600,000",
+        "status": "sale",
+        "area": "2,800 sq ft",
+        "location": "Suburban Oasis, City B",
+        "facilities": ["4 Bedrooms", "3 Bathrooms", "Large Kitchen", "Front Porch"],
+        "image": "family_home_image_url",
+        "button_text": "View Property"
+      },
+      {
+        "estate_title": "Studio Apartment in Downtown",
+        "id": 6,
+        "segment_name": "Residential",
+        "description": "A stylish studio apartment located in the heart of downtown, close to all amenities.",
+        "price": "$1,500/month",
+        "status": "rent",
+        "area": "600 sq ft",
+        "location": "City Center, City C",
+        "facilities": ["Open Layout", "Modern Kitchenette", "City Views"],
+        "image": "studio_apartment_image_url",
+        "button_text": "View Property"
+      },
+      {
+        "estate_title": "Lakefront Cabin Retreat",
+        "id": 7,
+        "segment_name": "Residential",
+        "description": "A cozy cabin nestled by the lake, offering serene views and a peaceful atmosphere.",
+        "price": "$300,000",
+        "status": "sale",
+        "area": "1,200 sq ft",
+        "location": "Tranquil Lakeside, City D",
+        "facilities": ["2 Bedrooms", "1 Bathroom", "Fireplace", "Deck"],
+        "image": "cabin_image_url",
+        "button_text": "View Property"
+      },
+      {
+        "estate_title": "Urban Loft with Industrial Chic",
+        "id": 8,
+        "segment_name": "Residential",
+        "description": "A trendy urban loft featuring industrial-chic design elements and urban views.",
+        "price": "$800,000",
+        "status": "sale",
+        "area": "1,500 sq ft",
+        "location": "Artistic Quarter, City E",
+        "facilities": ["Open Loft Space", "Exposed Brick Walls", "High Ceilings"],
+        "image": "urban_loft_image_url",
+        "button_text": "View Property"
+      },
+      {
+        "estate_title": "Beachfront Villa with Infinity Pool",
+        "id": 9,
+        "segment_name": "Residential",
+        "description": "An exquisite beachfront villa boasting luxurious amenities and breathtaking ocean views.",
+        "price": "$2,500,000",
+        "status": "sale",
+        "area": "5,000 sq ft",
+        "location": "Seaside Paradise, City F",
+        "facilities": ["5 Bedrooms", "5 Bathrooms", "Infinity Pool", "Private Beach Access"],
+        "image": "beachfront_villa_image_url",
+        "button_text": "View Property"
+      }
+    ]
+  }
+  

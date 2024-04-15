@@ -9,3 +9,27 @@
     font-weight: weight;
     font-style: normal;
   }
+  .slide {
+    display: flex;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    border-radius: 25px;
+}
+.slide1{
+    background-image: url('./assets/image/2.jpg');;
+}
+.slide2{
+    background-image: url('./assets/image/aa.jpg');;
+}
+.slide3{
+    background-image: url('./assets/image/3.jpg');;
+}
+.slide4{
+    background-image: url('./assets/image/4.jpg');;
+}
+.slide5{
+    background-image: url('./assets/image/5.jpg');;
+}
