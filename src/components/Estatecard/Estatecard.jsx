@@ -19,7 +19,7 @@ const Estatecard = () => {
                 <h1 className='text-4xl text-center font-bold mt-5'>Our latest Estate</h1>
                 <p className='text-xl text-center w-2/4 m-auto mt-5 '>We are very proud of the service we provide. See what our guests have to say about us, our locations and services.</p>
             </div>
-            <div className='mt-10 grid grid-cols-3 gap-8  max-sm:flex max-sm:flex-col  relative flex-grow'>
+            <div className='mt-10 grid grid-cols-3 w-full gap-8  max-sm:flex max-sm:flex-col  relative flex-grow' >
                 {
                     estates.map(estate => <Estatecards
                     key={estate.id}

@@ -30,7 +30,7 @@ const Nav = () => {
                     className={({ isActive }) =>
                         isActive ? 'btn btn-outline btn-primary' : 'font-bold'
                     }
-                    to="/UpdateProfile"
+                    to="/Update Profile"
                 >
                     Update Profile
                 </NavLink>
