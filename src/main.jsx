@@ -11,6 +11,8 @@ import UpdateProfile from './components/UpdateProfile/UpdateProfile';
 import Detailspage from './components/DetailsPage/Detailspage';
 import UserProfile from './components/UserProfile/UserProfile';
 import Login from './components/Login/Login';
+import Register from './components/Register/Register';
+import Authprovider from './components/Providers/Authprovider';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +20,7 @@ const router = createBrowserRouter([
     children:[{
       path:'/',
       element:<Home></Home>,
+      loader: () => fetch('estate.json')
     },
    { path:"/Update Prfile",
     element:<UpdateProfile></UpdateProfile>,},
@@ -26,13 +29,17 @@ const router = createBrowserRouter([
    { path:"/UserProfile",
     element:<UserProfile></UserProfile>,},
    { path:"/Login",
-    element:<Login></Login>,}
+    element:<Login></Login>,},
+   { path:"/register",
+    element:<Register></Register>,}
   ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+   <Authprovider>
    <RouterProvider router={router} />
+   </Authprovider>
   </React.StrictMode>,
 )

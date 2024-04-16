@@ -1,8 +1,17 @@
 import { NavLink } from "react-router-dom";
 import moment from 'moment';
 import ico from '../../assets/image/cottage_FILL0_wght400_GRAD0_opsz24.png';
+import { AuthContext } from "../Providers/Authprovider";
+import { useContext } from "react";
+const Nav = () => {
+    const {user,logOut} = useContext(AuthContext);
+    const  handelSignOut = () => {
+        logOut()
+        .then()
+        .catch()
 
-const Header = () => {
+
+    }
     const links = (
         <>
             <li>
@@ -71,13 +80,21 @@ const Header = () => {
                 </ul>
             </div>
             <p className='ml-12 text-xl w-96 font-bold'>{moment().format('MMMM Do YYYY, h:mm a')}</p>
+          
             <div className="navbar-end gap-5 mr-5">
+            {
+                user ?
+                <button onClick={handelSignOut} className="btn btn-info text-white w-28">Sign Out</button>
+                :
                 <NavLink to="/Login">
                     <button className="btn btn-info text-white w-28">Log in</button>
                 </NavLink>
+
+            }
+                
             </div>
         </div>
     );
 };
 
-export default Header;
+export default Nav;

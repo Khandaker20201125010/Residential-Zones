@@ -1,5 +1,4 @@
-{
-    "residential_estates": [
+[
       {
         "estate_title": "Modern Townhouse in Suburbia",
         "id": 1,
@@ -10,7 +9,7 @@
         "area": "2,500 sq ft",
         "location": "Suburbia, City X",
         "facilities": ["3 Bedrooms", "2 Bathrooms", "Open Kitchen", "Backyard Garden"],
-        "image": "townhouse_image_url",
+        "image": "https://i.ibb.co/Gp6ZqHK/istockphoto-1393537665-612x612.jpg",
         "button_text": "View Property"
       },
       {
@@ -23,20 +22,20 @@
         "area": "3,000 sq ft",
         "location": "Downtown, City Y",
         "facilities": ["4 Bedrooms", "3 Bathrooms", "Private Terrace", "Gym", "Swimming Pool"],
-        "image": "penthouse_image_url",
+        "image": "https://i.ibb.co/WGygNjZ/istockphoto-1412238624-612x612.jpgl",
         "button_text": "View Property"
       },
       {
-        "estate_title": "Cozy Apartment in Trendy Neighborhood",
+        "estate_title": "Single-family homes",
         "id": 3,
         "segment_name": "Residential",
-        "description": "A charming apartment nestled in a vibrant and trendy neighborhood.",
+        "description": "A charming apartment for single happy family.",
         "price": "$2,000/month",
         "status": "rent",
         "area": "900 sq ft",
         "location": "Hipster District, City Z",
         "facilities": ["1 Bedroom", "1 Bathroom", "Balcony", "Shared Courtyard"],
-        "image": "apartment_image_url",
+        "image": "https://i.ibb.co/K94Zj04/ac76cdfbcfdfc53ee5ce9749773def9d-p-e.jpg",
         "button_text": "View Property"
       },
       {
@@ -49,7 +48,7 @@
         "area": "1,200 sq ft",
         "location": "Retirement Paradise, City A",
         "facilities": ["Independent Living", "Dining Hall", "Library", "Swimming Pool", "Fitness Center"],
-        "image": "senior_community_image_url",
+        "image": "https://i.ibb.co/DpdH5XT/images.jpg",
         "button_text": "View Property"
       },
       {
@@ -62,7 +61,7 @@
         "area": "2,800 sq ft",
         "location": "Suburban Oasis, City B",
         "facilities": ["4 Bedrooms", "3 Bathrooms", "Large Kitchen", "Front Porch"],
-        "image": "family_home_image_url",
+        "image": "https://i.ibb.co/ySw5VNz/Transitional-Home-Design-Samsel-Architects-02-1-Kindesign.jpg",
         "button_text": "View Property"
       },
       {
@@ -75,7 +74,7 @@
         "area": "600 sq ft",
         "location": "City Center, City C",
         "facilities": ["Open Layout", "Modern Kitchenette", "City Views"],
-        "image": "studio_apartment_image_url",
+        "image": "https://i.ibb.co/ZJDSVHj/f35e897af74010dab86676ac132ec239.jpg",
         "button_text": "View Property"
       },
       {
@@ -88,20 +87,20 @@
         "area": "1,200 sq ft",
         "location": "Tranquil Lakeside, City D",
         "facilities": ["2 Bedrooms", "1 Bathroom", "Fireplace", "Deck"],
-        "image": "cabin_image_url",
+        "image": "https://i.ibb.co/k2NdLSQ/235573664.jpg",
         "button_text": "View Property"
       },
       {
-        "estate_title": "Urban Loft with Industrial Chic",
+        "estate_title": " vacation rentals",
         "id": 8,
         "segment_name": "Residential",
-        "description": "A trendy urban loft featuring industrial-chic design elements and urban views.",
+        "description": "A trendy vacation featuring industrial-chic design elements and rentals views.",
         "price": "$800,000",
         "status": "sale",
         "area": "1,500 sq ft",
         "location": "Artistic Quarter, City E",
         "facilities": ["Open Loft Space", "Exposed Brick Walls", "High Ceilings"],
-        "image": "urban_loft_image_url",
+        "image": "https://i.ibb.co/fvyN0M6/luxury-vacation-rental-sites-03.jpg",
         "button_text": "View Property"
       },
       {
@@ -114,9 +113,7 @@
         "area": "5,000 sq ft",
         "location": "Seaside Paradise, City F",
         "facilities": ["5 Bedrooms", "5 Bathrooms", "Infinity Pool", "Private Beach Access"],
-        "image": "beachfront_villa_image_url",
+        "image": "https://i.ibb.co/JnC4w2y/85.jpg",
         "button_text": "View Property"
       }
     ]
-  }
-  
