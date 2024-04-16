@@ -35,17 +35,6 @@ const Nav = () => {
                     Update Profile
                 </NavLink>
             </li>
-
-            <li>
-                <NavLink
-                    className={({ isActive }) =>
-                        isActive ? 'btn btn-outline btn-primary' : 'font-bold'
-                    }
-                    to="/DetailsPage"
-                >
-                    Details Page
-                </NavLink>
-            </li>
             <li>
                 <NavLink
                     className={({ isActive }) =>
@@ -54,6 +43,16 @@ const Nav = () => {
                     to="/UserProfile"
                 >
                     Profile
+                </NavLink>
+            </li>
+            <li>
+                <NavLink
+                    className={({ isActive }) =>
+                        isActive ? 'btn btn-outline btn-primary' : 'font-bold'
+                    }
+                    to="/Estatedlist"
+                >
+                    Estate List
                 </NavLink>
             </li>
         </>

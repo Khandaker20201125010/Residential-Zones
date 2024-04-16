@@ -6,14 +6,15 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+console.log('Inside Firebase Config',import.meta.env.VITE_PASS)
 const firebaseConfig = {
-  apiKey: "AIzaSyDei71yHlsjV8D1B_H4JvGhFW3GtVyy-jE",
-  authDomain: "residential-zones.firebaseapp.com",
-  projectId: "residential-zones",
-  storageBucket: "residential-zones.appspot.com",
-  messagingSenderId: "717908699463",
-  appId: "1:717908699463:web:b7bdbd482c2d61770ac462",
-  measurementId: "G-VGBFTL83CJ"
+  apiKey: import.meta.env.VITE_ApiKey,
+  authDomain: import.meta.env.VITE_AuthDomain,
+  projectId: import.meta.env.VITE_ProjectId,
+  storageBucket: import.meta.env.VITE_StorageBucket,
+  messagingSenderId: import.meta.env.VITE_MessagingSenderId,
+  appId: import.meta.env.VITE_AppId,
+  measurementId: import.meta.env.VITE_MeasurementId,
 };
 
 // Initialize Firebase

@@ -1,8 +1,17 @@
+import { useParams } from "react-router-dom";
 
 const Detailspage = () => {
+    const {id} = useParams();
     return (
         <div>
-            <h1>deta deta</h1>
+            <div className="grid md:grid-cols-4">
+                <div className="col-span-3">
+                    <h2 className="text-5xl"></h2>
+                    <p>{id}</p>
+                </div>
+                <div>
+                </div>
+            </div>
             
         </div>
     );

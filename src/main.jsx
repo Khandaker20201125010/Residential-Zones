@@ -13,6 +13,8 @@ import UserProfile from './components/UserProfile/UserProfile';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import Authprovider from './components/Providers/Authprovider';
+import Estatelist from './components/Estatelist/Estatelist';
+import Privetroot from './components/Privertroot/Privetroot';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,12 +22,14 @@ const router = createBrowserRouter([
     children:[{
       path:'/',
       element:<Home></Home>,
-      loader: () => fetch('estate.json')
+      loader: () => fetch('/estate.json')
     },
    { path:"/Update Profile",
     element:<UpdateProfile></UpdateProfile>,},
-   { path:"/DetailsPage",
-    element:<Detailspage></Detailspage>,},
+   { path:"/DetailsPage/:id",
+    element:<Privetroot><Detailspage></Detailspage></Privetroot>,},
+   { path:"/Estatedlist",
+    element:<Estatelist></Estatelist>,},
    { path:"/UserProfile",
     element:<UserProfile></UserProfile>,},
    { path:"/Login",

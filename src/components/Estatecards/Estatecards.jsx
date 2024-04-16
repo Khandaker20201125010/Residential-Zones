@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
+
 const Estatecards = ({ estates }) => {
-    const { status, image, segment_name, description, price, area, location, rent, facilities, button_text, estate_title } = estates;
+    const {id, status, image, segment_name, description, price, area, location, rent, facilities, button_text, estate_title } = estates;
     return (
         <div className="card-container">
             <div>
@@ -14,7 +16,10 @@ const Estatecards = ({ estates }) => {
                         <div className="card-actions justify-between flex flex-col">
                             <div className="flex gap-44">
                                 <h3 className="font-bold">{status}</h3>
+                                <Link to={`/DetailsPage/${id}`}>
                                 <button className="bg-green-500 rounded-full btn-sm">{button_text}</button>
+                                </Link>
+                                
                             </div>
                         </div>
                     </div>

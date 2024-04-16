@@ -1,15 +1,10 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import s1 from '../../assets/image/s1.jpeg'
 import s2 from '../../assets/image/s2.jpeg'
 import s3 from '../../assets/image/s3.jpeg'
-
-
-// import required modules
 import { Pagination } from 'swiper/modules';
 const Perfect = () => {
     return (
