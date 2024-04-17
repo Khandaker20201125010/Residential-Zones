@@ -15,16 +15,18 @@ const Register = () => {
         const email = form.get('email');
         const password = form.get('password');
 
-        // Check if all required fields are filled
-        if (!name || !photo || !email || !password) {
-            toast.error('All fields are required');
+        // Password validation
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+        if (!password.match(passwordRegex)) {
+            toast.error('Password must be at least 6 characters long and contain at least one Capital and one Small letter');
             return;
         }
 
-         try{
+        try {
+            // Register user
             const result = await createUser(email, password);
             console.log(result.user);
-   
+
             toast.success('Registration successful');
         } catch (error) {
             console.error(error);
@@ -32,12 +34,10 @@ const Register = () => {
             if (error.code === 'auth/email-already-in-use') {
                 toast.error('Email is already in use');
             } else {
-
                 toast.error('Registration failed');
             }
         }
     };
-
 
     return (
         <div>
