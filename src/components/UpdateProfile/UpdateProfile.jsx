@@ -8,38 +8,20 @@ import { IoMdEye } from "react-icons/io";
 import { IoMdEyeOff } from "react-icons/io";
 
 const UpdateProfile = () => {
-    const { createUser } = useContext(AuthContext);
+    const {updateUser,user} = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false); 
     const handleRegister = async (e) => {
         e.preventDefault();
-        const form = new FormData(e.currentTarget);
-        const name = form.get('name');
-        const photo = form.get('photo');
-        const email = form.get('email');
-        const password = form.get('password');
+        const name = e.target.name.value;
+        const photo = e.target.photo.value;
+       updateUser (name,photo)
+       .then(()=>{
+        console.log(user)
+       })
+       .catch(error =>{
+        console.error(error);
+       })
 
-        // Password validation
-        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
-        if (!password.match(passwordRegex)) {
-            toast.error('Password must be at least 6 characters long and contain at least one Capital and one Small letter');
-            return;
-        }
-
-        try {
-            // Register user
-            const result = await createUser(email, password,photo,name);
-            console.log(result.user);
-
-            toast.success('Registration successful');
-        } catch (error) {
-            console.error(error);
-
-            if (error.code === 'auth/email-already-in-use') {
-                toast.error('Email is already in use');
-            } else {
-                toast.error('Registration failed');
-            }
-        }
     };
 
     return (
@@ -54,19 +36,19 @@ const UpdateProfile = () => {
                             <label className="label">
                                 <span className="label-text font-bold">Name</span>
                             </label>
-                            <input type="text" required name="name" placeholder="Enter your name" className="input input-bordered" />
+                            <input type="text" required name="name" defaultValue = {user?.displayName} placeholder="Enter your name" className="input input-bordered" />
                         </div>
                         <div className="form-control">
-                            <label className="label">
+                            <label className="label" >
                                 <span className="label-text font-bold">Photo URL</span>
                             </label>
-                            <input type="text" required name="photo" placeholder="Photo URL" className="input input-bordered" />
+                            <input type="text" required name="photo" defaultValue={user?.photoURL}  placeholder="Photo URL" className="input input-bordered" />
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text font-bold">Email</span>
                             </label>
-                            <input type="email" required name="email" placeholder="Email" className="input input-bordered" />
+                            <input type="email" required name="email" defaultValue={user?.email}  placeholder="Email" className="input input-bordered" />
                         </div>
                         <div className="form-control flex relative">
                         <label className="label">
