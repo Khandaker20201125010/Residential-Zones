@@ -22,14 +22,16 @@ const router = createBrowserRouter([
     children:[{
       path:'/',
       element:<Home></Home>,
-      loader: () => fetch('/estate.json')
+      loader: () => fetch('../estate.json')
     },
    { path:"/Update Profile",
     element:<UpdateProfile></UpdateProfile>,},
    { path:"/DetailsPage/:id",
-    element:<Privetroot><Detailspage></Detailspage></Privetroot>,},
+    element:<Privetroot><Detailspage></Detailspage></Privetroot>,
+    loader: () => fetch('../estate.json')},
    { path:"/Estatedlist",
-    element:<Estatelist></Estatelist>,},
+    element:<Estatelist></Estatelist>,
+    loader: () => fetch('../estate.json')},
    { path:"/UserProfile",
     element:<UserProfile></UserProfile>,},
    { path:"/Login",

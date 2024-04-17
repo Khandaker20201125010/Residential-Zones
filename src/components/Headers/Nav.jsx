@@ -3,6 +3,7 @@ import moment from 'moment';
 import ico from '../../assets/image/cottage_FILL0_wght400_GRAD0_opsz24.png';
 import { AuthContext } from "../Providers/Authprovider";
 import { useContext } from "react";
+import 'animate.css';
 const Nav = () => {
     const {user,logOut} = useContext(AuthContext);
     const  handelSignOut = () => {
@@ -71,7 +72,7 @@ const Nav = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="ml-10 text-3xl text-blue-900 flex flex-col font-bold">Residential <span className="text-blue-700 ml-16 text-2xl flex gap-2 font-bold"><img src={ico} alt="" /> Zones</span></a>
+                <a className="animate__animated animate__flip ml-10 text-3xl text-blue-900 flex flex-col font-bold">Residential <span className="text-blue-700 ml-16 text-2xl flex gap-2 font-bold"><img src={ico} alt="" /> Zones</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-4 text-white">
