@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { getStoredApplication } from "../utility/localstorage";
+import { Helmet } from "react-helmet-async";
 
 const Estatelist = () => {
     const estatesData = useLoaderData();
@@ -16,6 +17,9 @@ const Estatelist = () => {
 
     return (
         <div className="animate__animated animate__lightSpeedInRight">
+             <Helmet>
+          <title>Estate List || Realestate</title>
+        </Helmet>
             {appliedEstates.map(estate => (
                 <div key={estate.id} className="card card-side bg-base-100 shadow-2xl">
                     <figure><img className="w-96 h-82 mt-10 shadow-2xl" src={estate.image} alt="Movie" /></figure>

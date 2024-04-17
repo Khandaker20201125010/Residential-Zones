@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import { getNowApplication, getStoredApplication } from "../utility/localstorage";
 import { IoLocationOutline } from "react-icons/io5";
+import { Helmet } from "react-helmet-async";
 const Detailspage = () => {
     const estates = useLoaderData();
     const { id } = useParams();
@@ -20,6 +21,9 @@ const Detailspage = () => {
     };
     return (
         <div>
+            <Helmet>
+          <title>Detail Page|| Realestate</title>
+        </Helmet>
             <div className="animate__animated animate__bounceInDown mt-5 card lg:card-side bg-base-100 shadow-xl">
                 <figure className="w-full"><img src={estate.image} alt="Album" /></figure>
                 <div className=" p-10 w-3/4">

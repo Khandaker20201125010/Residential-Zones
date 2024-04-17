@@ -12,7 +12,7 @@ const Banner = () => {
     <div className=" lg:container lg:mx-auto sm:container sm:mx-auto">
       <div className="font-bold mr-12">
         <Marquee speed={150}>
-         Welcome to the Best Residential website . Find your dream or any  type of estate you looking for you can from here . Thank you. 
+         Welcome to the Best Residential website . Find your dream or any  type of estate you looking for you can get from here . Thank you. 
         </Marquee>
       </div>
       <>

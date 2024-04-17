@@ -33,3 +33,13 @@
 .slide5{
     background-image: url('./assets/image/5.jpg');;
 }
+.error {
+    background-image: url('./assets/image/error.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100vh; 
+    margin: 0; 
+    padding: 0; 
+    justify-content: center; 
+    align-items: center; 
+}
