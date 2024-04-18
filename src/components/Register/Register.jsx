@@ -18,7 +18,7 @@ const Register = () => {
         const email = form.get('email');
         const password = form.get('password');
 
-        // Password validation
+        
         const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
         if (!password.match(passwordRegex)) {
             toast.error('Password must be at least 6 characters long and contain at least one Capital and one Small letter');
@@ -26,7 +26,7 @@ const Register = () => {
         }
 
         try {
-            // Register user
+            //
             const result = await createUser(email, password,photo,name);
             console.log(result.user);
 
