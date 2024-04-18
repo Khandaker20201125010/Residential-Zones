@@ -16,13 +16,13 @@ const Estatelist = () => {
     }, [estatesData]);
 
     return (
-        <div className="animate__animated animate__lightSpeedInRight">
+        <div className="animate__animated animate__lightSpeedInRight grid gap-4">
              <Helmet>
           <title>Estate List || Realestate</title>
         </Helmet>
             {appliedEstates.map(estate => (
                 <div key={estate.id} className="card card-side bg-base-100 shadow-2xl">
-                    <figure><img className="w-96 h-82 mt-10 shadow-2xl" src={estate.image} alt="Movie" /></figure>
+                    <figure><img className="w-96 h-82  shadow-2xl" src={estate.image} alt="Movie" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">{estate.estate_title}</h2>
                         <p>{estate.description}</p>

@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from "react-helmet-async";
 import { IoMdEye } from "react-icons/io";
 import { IoMdEyeOff } from "react-icons/io";
+import ParticlesBackground from "../Particles/ParticlesBackground";
 
 const UpdateProfile = () => {
     const {updateUser,user} = useContext(AuthContext);
@@ -29,7 +30,8 @@ const UpdateProfile = () => {
             <Helmet>
           <title>Register|| Realestate</title>
         </Helmet>
-            <div className="text-3xl my-10 text-center">
+            <div className="text-3xl my-10 text-center h-screen bg-blue-950 rounded-2xl">
+                <ParticlesBackground></ParticlesBackground>
                 <div className="w-3/4 text-center m-auto p-20">
                     <form onSubmit={handleRegister} className="md-3/4 lg:w-1/2 mx-auto bg-slate-500 p-12 rounded-2xl">
                         <div className="form-control">

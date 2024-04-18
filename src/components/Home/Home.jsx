@@ -3,6 +3,7 @@ import Estatecard from "../Estatecard/Estatecard";
 import Perfect from "../Perfect/Perfect";
 import Footer from "../Footer/Footer";
 import { Helmet } from "react-helmet-async";
+import CustomerReview from "../CustomerRewvi/CustomerReview";
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
         <Banner />
         <Perfect />
         <Estatecard />
+        <CustomerReview></CustomerReview>
         <Footer></Footer>
         
       </div>
