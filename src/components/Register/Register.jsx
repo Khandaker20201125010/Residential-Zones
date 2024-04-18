@@ -26,7 +26,7 @@ const Register = () => {
         }
 
         try {
-            //
+            
             const result = await createUser(email, password,photo,name);
             console.log(result.user);
 
