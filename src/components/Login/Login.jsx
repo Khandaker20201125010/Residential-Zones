@@ -11,6 +11,8 @@ import { FcGoogle } from "react-icons/fc";
 import { GithubAuthProvider } from "firebase/auth";
 import { FaGithub } from "react-icons/fa";
 import ParticlesBackground from "../Particles/ParticlesBackground";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
     const auth = getAuth(app)
     const googleProvider = new GoogleAuthProvider();
@@ -28,7 +30,7 @@ const Login = () => {
 
         signIn(email, password)
             .then(result => {
-
+                toast.success('Logged in with Google successfully!');
                 naviGate(location?.state ? location.state : '/')
             })
             .catch(error => {
@@ -40,20 +42,25 @@ const Login = () => {
             .then(result => {
                 const loggedInUser = result.user;
                 setUser(loggedInUser);
+                toast.success('Logged in with Google successfully!');
+                naviGate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 console.log(error.message);
+                toast.error('Failed to login with Google.');
             });
     };
+    
     const gitSignIn = () => {
         signInWithPopup(auth, githubProvider)
             .then(result => {
                 const loggedInUser = result.user;
-                console.log(loggedInUser);
                 setUser(loggedInUser);
+                toast.success('Logged in with GitHub successfully!');
             })
             .catch(error => {
                 console.log(error.message);
+                toast.error('Failed to login with GitHub.');
             });
     };
 
@@ -93,7 +100,7 @@ const Login = () => {
                         <button onClick={gitSignIn} className="btn mt-5 rounded-full"><FaGithub size={32} /></button>
                     </div>
                 </form>
-               
+               <ToastContainer></ToastContainer>
             </div>
         </div>
     );

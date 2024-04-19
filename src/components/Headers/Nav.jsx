@@ -88,7 +88,7 @@ const Nav = () => {
                 <div role="button" className="btn btn-ghost btn-circle avatar">
                     {user && (
                         <div className="w-10 rounded-full">
-                            <img alt="User avatar" src={user.photoURL} />
+                            <img alt="?" src={user.photoURL} />
                         </div>
                     )}
                 </div>
